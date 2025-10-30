@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,6 @@
 }
 
 :root {
-  --primary-color: #eabecf;
   --secondary-color: #f5e0a7;
   --amarelo-claro: #ece9e5;
   --roxo-claro: #c6c2cd;
@@ -94,7 +93,7 @@ body {
 }
 
 /* .nav-link:hover { */
-  /* color: var(--btn); */
+/* color: var(--btn); */
 /* } */
 
 .nav-link:hover::after {
@@ -183,7 +182,7 @@ body {
 }
 
 .btn-primary {
-  background: #edb7b3;
+  background: var(--btn);
   color: var(--text-color);
   border: 1px solid var(--text-color);
 }
@@ -194,7 +193,7 @@ body {
 }
 
 .btn-secondary {
-  background: var(--white);
+  background: var(--amarelo-claro);
   color: var(--text-color);
   border: 1px solid var(--text-color);
 }
@@ -412,11 +411,7 @@ section.visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    var(--btn),
-    var(--amarelo-claro)
-  );
+  background: linear-gradient(135deg, var(--btn), var(--amarelo-claro));
   border-radius: 50%;
   color: var(--white);
   transition: var(--transition);
@@ -511,9 +506,10 @@ section.visible {
 }
 
 .modal-content {
-  background: var(--white);
+  background: var(--amarelo-claro);
   padding: 3rem;
   border-radius: 20px;
+  border: 2px solid var(--text-color);
   max-width: 500px;
   width: 90%;
   position: relative;
@@ -550,8 +546,9 @@ section.visible {
 
 .modal-content h3 {
   font-size: 2rem;
+  font-family: "Lobster Two", sans-serif;
   margin-bottom: 2rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .contact-info {
@@ -560,20 +557,23 @@ section.visible {
 
 .contact-info p {
   margin-bottom: 0.5rem;
-  color: var(--dark-gray);
+  color: var(--text-color);
 }
 
 .contact-email {
   display: block;
   font-size: 1.1rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
   text-decoration: none;
+  text-shadow: 1px 1px 2px #fff;
   margin-bottom: 1.5rem;
   word-break: break-all;
 }
 
 .contact-email:hover {
-  color: var(--primary-color);
+  text-shadow: 1px 1px 2px #1e213076;
+
+  /* font-weight: bold; */
 }
 
 .contact-whatsapp-label {
@@ -583,14 +583,11 @@ section.visible {
 .contact-whatsapp {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  color: var(--white);
+  background: var(--btn);
+  color: var(--text-color);
   text-decoration: none;
   border-radius: 25px;
+  border: 1px solid var(--text-color);
   margin-top: 0.5rem;
   transition: var(--transition);
 }
@@ -598,6 +595,7 @@ section.visible {
 .contact-whatsapp:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(250, 167, 181, 0.4);
+  background-color: #e38d86;
 }
 
 /* Responsive */
