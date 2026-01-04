@@ -137,8 +137,8 @@ body {
 .hero-image img {
   width: 100%;
   max-width: 400px;
-  /* border-radius: 50%;
-  border: 2px solid var(--text-color); */
+  border-radius: 20%;
+  /*border: 2px solid var(--text-color); */
   transition: var(--transition);
 }
 
@@ -346,9 +346,9 @@ section.visible {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
   gap: 2rem;
-  max-width: 900px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
